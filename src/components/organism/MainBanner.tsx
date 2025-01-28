@@ -1,8 +1,17 @@
-import React from 'react'
+import { ReactNode } from 'react';
 
-const MainBanner = () => {
+type BannerType = 'home-bg' | 'about-bg' | 'contact-bg';
+
+interface MainBannerProps {
+  children: ReactNode;
+  type: BannerType;
+}
+
+const MainBanner = ({children, type} : MainBannerProps) => {
   return (
-    <div>MainBanner</div>
+    <div className={`${type}`}>MainBanner
+        {children}
+    </div>
   )
 }
 
