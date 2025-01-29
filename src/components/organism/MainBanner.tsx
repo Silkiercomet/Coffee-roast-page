@@ -9,9 +9,9 @@ interface MainBannerProps {
 
 const MainBanner = ({children, type} : MainBannerProps) => {
   return (
-    <div className={`${type}`}>MainBanner
+    <section className={`${type}`}>
         {children}
-    </div>
+    </section>
   )
 }
 
