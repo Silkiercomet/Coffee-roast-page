@@ -1,3 +1,4 @@
+import Headquarters from "../organism/Headquaters"
 import MainBanner from "../organism/MainBanner"
 import SecondaryBanner from "../organism/SecondaryBanner"
 
@@ -11,7 +12,8 @@ const AboutTemplate = () => {
             </div>
         </MainBanner>
         <SecondaryBanner title="title" content="content" img="image" inverse={false} />
-        <SecondaryBanner title="title" content="content" img="image" inverse={false} />
+        <SecondaryBanner title="title" content="content" img="image" inverse={true} />
+        <Headquarters />
     </main>
   )
 }

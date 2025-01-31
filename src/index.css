@@ -41,7 +41,7 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
-h1, h2, h3 {
+h1, h2, h3,h4 {
   font-family: "Fraunces", serif;
   font-size: 2.1rem;
 }
