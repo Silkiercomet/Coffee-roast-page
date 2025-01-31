@@ -1,8 +1,10 @@
-import React from 'react'
+import AboutTemplate from "../templates/AboutTemplate"
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+      <AboutTemplate />
+    </>
   )
 }
 
