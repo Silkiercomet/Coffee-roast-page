@@ -1,26 +1,25 @@
-import React from 'react';
-import NumberedCard from '../atoms/NumberedCard';
+import NumberedCard from "../atoms/NumberedCard";
 
 interface HowItWorksItem {
   header: string;
   content: string;
 }
+interface SectionProps {
+  header: string;
+  array: HowItWorksItem[];
+}
 
-const HowItWorksSection: React.FC = () => {
-  const howItWorks: HowItWorksItem[] = [
-    { header: 'Header 1', content: 'Content 1' },
-    { header: 'Header 2', content: 'Content 2' },
-    { header: 'Header 3', content: 'Content 3' },
-  ];
-
+const HowItWorksSection = ({ header, array }: SectionProps) => {
   return (
     <section>
-      <h3>How it works</h3>
+      <h3>{header}</h3>
       <ol>
-        {howItWorks.map((item, index) => (
-          <li key={index}>
-            <NumberedCard header={item.header} content={item.content} />
-          </li>
+        {array.map((item, index) => (
+          <NumberedCard
+            key={index}
+            header={item.header}
+            content={item.content}
+          />
         ))}
       </ol>
     </section>

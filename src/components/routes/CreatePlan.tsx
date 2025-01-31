@@ -1,8 +1,10 @@
-import React from 'react'
+import ContactUsTemplate from '../templates/ContactUsTemplate'
 
 const CreatePlan = () => {
   return (
-    <div>CreatePlan</div>
+    <>
+      <ContactUsTemplate />
+    </>
   )
 }
 
