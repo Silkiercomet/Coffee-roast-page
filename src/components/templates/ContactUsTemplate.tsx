@@ -1,5 +1,6 @@
 import HowItWorksSection from "../organism/HowItWorks"
 import MainBanner from "../organism/MainBanner"
+import OrderForm from "../organism/OrderForm";
 
 const ContactUsTemplate = () => {
     const howItWorks = [
@@ -16,7 +17,7 @@ const ContactUsTemplate = () => {
             </div>
         </MainBanner>
         <HowItWorksSection array={howItWorks} header=""/>
-
+        <OrderForm />
     </main>
   )
 }
