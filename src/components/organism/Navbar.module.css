@@ -1,0 +1,79 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin-inline: auto;
+    position: relative;
+}
+.hamburgerMenu{
+    display: none;
+    cursor: pointer;
+}
+.navbarMenuDesktop{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 2rem;
+
+    li a {
+        text-decoration: none;
+        color: var(--alt-font-color);
+        font-weight: 700;
+        font-size: 0.9rem;
+        transition: 300ms ease-in-out;
+        &:hover{
+            color: var(--font-color);
+        }
+    }
+}
+.navbarMenuMobileDrop{
+    position: absolute;
+    left:  -2rem;
+    right:  0;
+    z-index: 91;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    top: 81px;
+    height:  calc(100vh - 91px);
+    background: linear-gradient(#fefcf7 35%, rgba(254, 252, 247, 0.56));
+    opacity: 0;
+    transition: 300ms ease-in-out;
+    &.open{
+        opacity: 1;
+        top: 91px;
+        transition: 300ms ease-in-out;
+    }
+
+    li a{
+        text-decoration: none;
+        color: var(--font-color);
+        font-weight: 700;
+        font-family: "Fraunces", serif;
+        font-size: 1.5rem;
+
+    }
+    li:nth-child(1) {
+
+            margin-top: 4rem;
+
+    }
+}
+@media screen and (width < 1200px) {
+    .navbar{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 580px){
+    .hamburgerMenu{
+        display: block;
+    }
+    .navbarMenuDesktop{
+        display: none;
+    }
+}

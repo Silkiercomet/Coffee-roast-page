@@ -2,12 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
 :root {
   --bg-white: #fefcf7;
-  --font-color:#2C343E;
+  --font-color:#2c343e;
   --alt-font-color: #83888f;
   --cyan: #66d2cf;
   --darkcyan:#0e8784;
   --lighgray: #e2dedb;
   --hover-color: #fdd6ba;
+
+  --tablet: 768px;
+  --mobile: 480px;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -59,4 +62,16 @@ h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+@media (max-width: var(--tablet)) {
+  h1, h2, h3, h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: var(--mobile)) {
+  h1, h2, h3, h4 {
+    font-size: 1.2rem;
+  }
 }

@@ -1,9 +1,10 @@
 import { useForm } from 'react-hook-form';
 import { formData, FormDataSection } from '../../ultils/content';
 import FormOptions from '../moleculs/FormOptions';
+import OrderSummary from '../moleculs/OrderSummary';
 
 const OrderForm = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, watch } = useForm();
 
   const onSubmit = (data: any) => {
     console.log(data);
@@ -31,6 +32,7 @@ const OrderForm = () => {
             optionTitle={item.title}
           />
         ))}
+        <OrderSummary watch={watch} />
         <input type="submit" />
       </form>
     </section>
