@@ -1,0 +1,30 @@
+.banner{
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    padding: 6.25rem 3rem;
+    border-radius: 0.625rem;
+}
+.banner div{
+    display: grid;
+    gap:1.8rem;
+    h1{
+        font-size: 3rem;
+        color: white;
+        line-height: 3rem;
+    }
+    p{	
+    color: var(--lighgray);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner{
+
+        grid-template-columns: 1fr;
+        padding: 4rem 4rem;
+        div{
+            place-items: center;
+            text-align: center;
+        }
+    }
+}

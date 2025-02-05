@@ -4,7 +4,7 @@ import SecondaryBanner from "../organism/SecondaryBanner"
 
 const AboutTemplate = () => {
   return (
-    <main>
+    <main className="wrapper">
         <MainBanner type='about-bg'>
             <div>
                 <h1>Great coffee made simple.</h1>
