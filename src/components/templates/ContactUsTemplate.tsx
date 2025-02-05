@@ -9,7 +9,7 @@ const ContactUsTemplate = () => {
         { header: 'Header 3', content: 'Content 3' },
       ];
   return (
-    <main>
+    <main className="wrapper">
         <MainBanner type='contact-bg'>
             <div>
                 <h1>Great coffee made simple.</h1>

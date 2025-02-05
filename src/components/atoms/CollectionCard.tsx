@@ -1,3 +1,4 @@
+import style from "./CollectionCard.module.css"
 interface Props {
   image: string;
   title: string;
@@ -6,9 +7,9 @@ interface Props {
 
 const CollectionCard: React.FC<Props> = ({ image, title, description }) => {
   return (
-    <li>
+    <li className={style.card}>
       <img src={image} alt={title} />
-      <div>
+      <div className={style.card_text}>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

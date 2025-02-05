@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import style from "./MainBanner.module.css"
 
 type BannerType = 'home-bg' | 'about-bg' | 'contact-bg';
 
@@ -9,7 +10,7 @@ interface MainBannerProps {
 
 const MainBanner = ({children, type} : MainBannerProps) => {
   return (
-    <section className={`${type}`}>
+    <section className={`${type} ${style.banner}`}>
         {children}
     </section>
   )

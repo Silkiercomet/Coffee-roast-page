@@ -44,10 +44,12 @@
     background: linear-gradient(#fefcf7 35%, rgba(254, 252, 247, 0.56));
     opacity: 0;
     transition: 300ms ease-in-out;
+    pointer-events: none;
     &.open{
         opacity: 1;
         top: 91px;
         transition: 300ms ease-in-out;
+        pointer-events: all;
     }
 
     li a{
@@ -64,6 +66,8 @@
 
     }
 }
+
+
 @media screen and (width < 1200px) {
     .navbar{
         max-width: 90%;

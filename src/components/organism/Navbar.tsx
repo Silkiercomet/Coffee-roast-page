@@ -35,8 +35,8 @@ const Navbar = () => {
 
       </div>
 
-      {isMobileMenuOpen && (
-        <ul className={`${style.navbarMenuMobileDrop} ${isMobileMenuOpen ? style.open : ""}`}>
+
+        <ul className={`${style.navbarMenuMobileDrop} ${isMobileMenuOpen && style.open } `}>
           <li>
             <Link to="/">HOME</Link>
           </li>
@@ -47,7 +47,7 @@ const Navbar = () => {
             <Link to="/create-plan">CREATE A PLAN</Link>
           </li>
         </ul>
-      )}
+
     </nav>
   );
 };

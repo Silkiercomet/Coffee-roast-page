@@ -64,14 +64,76 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-@media (max-width: var(--tablet)) {
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: grid;
+  gap: 5rem;
+
+}
+@media screen and (width < 1220px) {
+  .wrapper{
+    max-width: 90%;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
   h1, h2, h3, h4 {
     font-size: 1.5rem;
   }
+
+  
 }
 
 @media (max-width: var(--mobile)) {
   h1, h2, h3, h4 {
     font-size: 1.2rem;
+  }
+}
+
+.home-bg {
+  background-image: url("../public/assets/home/desktop/image-hero-coffeepress.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-bg {
+  background-image: url("../public/assets/about/desktop/image-hero-whitecup.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-bg {
+  background-image: url("../public/assets/plan/desktop/image-hero-blackcup.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .home-bg {
+    background-image: url("../public/assets/home/tablet/image-hero-coffeepress.jpg");
+  }
+  .about-bg {
+    background-image: url("../public/assets/about/tablet/image-hero-whitecup.jpg");
+  }
+  .contact-bg {
+    background-image: url("../public/assets/plan/tablet/image-hero-blackcup.jpg");
+  }
+}
+
+@media (max-width: var(--mobile)) {
+  .home-bg {
+    background-image: url("../public/assets/home/mobile/image-hero-coffeepress.jpg");
+  }
+  .about-bg {
+    background-image: url("../public/assets/about/mobile/image-hero-whitecup.jpg");
+  }
+  .contact-bg {
+    background-image: url("../public/assets/plan/mobile/image-hero-blackcup.jpg");
   }
 }
