@@ -1,18 +1,7 @@
-import React from 'react';
 import WhyUsCard from '../atoms/WhyUsCard';
+import {cardsContent} from "../../ultils/content"
 
-interface CardContent {
-  imageRoute: string;
-  header: string;
-  content: string;
-}
-
-const WhyUsSection: React.FC = () => {
-  const cardsContent: CardContent[] = [
-    { imageRoute: 'imageRoute1.jpg', header: 'Header 1', content: 'Content 1' },
-    { imageRoute: 'imageRoute2.jpg', header: 'Header 2', content: 'Content 2' },
-    { imageRoute: 'imageRoute3.jpg', header: 'Header 3', content: 'Content 3' },
-];
+const WhyUsSection = () => {
 
   return (
     <section>

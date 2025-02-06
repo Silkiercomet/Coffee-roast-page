@@ -94,21 +94,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-bg {
-  background-image: url("../public/assets/home/desktop/image-hero-coffeepress.jpg");
+  background-image: url("/assets/home/desktop/image-hero-coffeepress.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about-bg {
-  background-image: url("../public/assets/about/desktop/image-hero-whitecup.jpg");
+  background-image: url("/assets/about/desktop/image-hero-whitecup.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .contact-bg {
-  background-image: url("../public/assets/plan/desktop/image-hero-blackcup.jpg");
+  background-image: url("/assets/plan/desktop/image-hero-blackcup.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,24 +116,24 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .home-bg {
-    background-image: url("../public/assets/home/tablet/image-hero-coffeepress.jpg");
+    background-image: url("/assets/home/tablet/image-hero-coffeepress.jpg");
   }
   .about-bg {
-    background-image: url("../public/assets/about/tablet/image-hero-whitecup.jpg");
+    background-image: url("/assets/about/tablet/image-hero-whitecup.jpg");
   }
   .contact-bg {
-    background-image: url("../public/assets/plan/tablet/image-hero-blackcup.jpg");
+    background-image: url("/assets/plan/tablet/image-hero-blackcup.jpg");
   }
 }
 
 @media (max-width: var(--mobile)) {
   .home-bg {
-    background-image: url("../public/assets/home/mobile/image-hero-coffeepress.jpg");
+    background-image: url("/assets/home/mobile/image-hero-coffeepress.jpg");
   }
   .about-bg {
-    background-image: url("../public/assets/about/mobile/image-hero-whitecup.jpg");
+    background-image: url("/assets/about/mobile/image-hero-whitecup.jpg");
   }
   .contact-bg {
-    background-image: url("../public/assets/plan/mobile/image-hero-blackcup.jpg");
+    background-image: url("/assets/plan/mobile/image-hero-blackcup.jpg");
   }
 }
