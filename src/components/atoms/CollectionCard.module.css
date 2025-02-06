@@ -1,24 +1,70 @@
 .card {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    grid-template-columns: 1fr;
-    img{
-        max-height: 220px;
-    }
-
+  display: grid;
+  place-items: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  img {
+    max-height: 220px;
+    transition: ease-in-out 300ms;
+  }
 }
-.card_text{
-    h3{
-        color: var(--font-color);
-        padding-bottom: 1.3rem;
-    }
+.card_text {
+  p {
+    display: flex;
+    align-self: center;
+    max-width: 28ch;
+    color: var(--alt-font-color);
+  }
+  h3 {
+    text-align: center;
+    color: var(--font-color);
+    padding-bottom: 1.3rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media screen and (width < 1100px) {
-    .card{
-        grid-template-columns: 1fr 1fr;
-        max-width: 700px;
-        text-align: left;
+  .card {
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+    text-align: left;
+  }
+  .card_text {
+    p {
+      text-align: center;
     }
+
+  }
+}
+@media screen and (width < 640px) {
+  .card_text {
+    p {
+      text-align: left;
+    }
+    h3{
+      align-self: left;
+      text-align: left;
+    }
+  }
+}
+@keyframes subir-bajar-rotar {
+  0% {
+    transform: translateY(0) rotate(0deg); /* Punto de inicio */
+  }
+  25% {
+    transform: translateY(-10px) rotate(0deg); /* Sube 10px */
+  }
+  50% {
+    transform: translateY(0) rotate(-10deg); /* Vuelve al punto de inicio y rota 10deg a la izquierda */
+  }
+  75% {
+    transform: translateY(0) rotate(10deg); /* Rota 20deg a la derecha */
+  }
+  100% {
+    transform: translateY(0) rotate(0deg); /* Vuelve al punto de inicio */
+  }
+}
+
+.card img:hover {
+  animation: subir-bajar-rotar 1s forwards; /* Aplica la animación al hacer hover */
 }

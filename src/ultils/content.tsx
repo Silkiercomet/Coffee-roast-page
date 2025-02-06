@@ -72,3 +72,17 @@ export const collection: CollectionItem[] = [
   { imgRoute: 'assets/home/desktop/image-piccollo.png', title: 'Piccollo', description: 'Mild and smooth blend featuring notes of toasted almond and dried cherry' },
   { imgRoute: 'assets/home/desktop/image-danche.png', title: 'Danche', description: 'Ethiopian hand-harvested blend densely packed with vibrant fruit notes' },
 ]
+
+// ------------------------------------------------ why us content-----------------------------------------------
+
+interface CardContent {
+  imageRoute: string;
+  header: string;
+  content: string;
+}
+
+export const cardsContent: CardContent[] = [
+    { imageRoute: 'imageRoute1.jpg', header: 'Header 1', content: 'Content 1' },
+    { imageRoute: 'imageRoute2.jpg', header: 'Header 2', content: 'Content 2' },
+    { imageRoute: 'imageRoute3.jpg', header: 'Header 3', content: 'Content 3' },
+  ]
