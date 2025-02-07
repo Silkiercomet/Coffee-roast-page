@@ -76,13 +76,14 @@ export const collection: CollectionItem[] = [
 // ------------------------------------------------ why us content-----------------------------------------------
 
 interface CardContent {
-  imageRoute: string;
+  image: JSX.Element;
   header: string;
   content: string;
 }
+import { TruckIcon, BeansIcon, GiftIcon } from "../components/atoms/coffeeIcon";
 
 export const cardsContent: CardContent[] = [
-    { imageRoute: 'imageRoute1.jpg', header: 'Header 1', content: 'Content 1' },
-    { imageRoute: 'imageRoute2.jpg', header: 'Header 2', content: 'Content 2' },
-    { imageRoute: 'imageRoute3.jpg', header: 'Header 3', content: 'Content 3' },
+    { image: <BeansIcon />, header: 'Best quality', content: 'Discover an endless variety of the world’s best artisan coffee from each of our roasters.' },
+    { image: <GiftIcon />, header: 'Exclusive benefits', content: 'Special offers and swag when you subscribe, including 30% off your first shipment.' },
+    { image: <TruckIcon />, header: 'Free shipping', content: 'We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.' },
   ]

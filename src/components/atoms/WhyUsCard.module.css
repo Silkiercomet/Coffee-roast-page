@@ -1,0 +1,31 @@
+.card {
+    display: grid;
+    place-items: center;
+    background-color: var(--darkcyan);
+    color: white;
+    padding: 3rem 2rem;
+    gap: 1.3rem;
+    text-align: center;
+    padding: 3.5rem;
+    border-radius: 15px;
+    transition: 300ms ease-in-out;
+    figure{
+        padding-block: 1rem;
+        margin-bottom: 30px;
+    }
+}
+.card figure svg path{
+    transition: 300ms ease-in-out;
+}
+.card_header {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card_header {
+        font-size: 1.7rem;
+    }
+    .card_content{
+        max-width: 300px;
+    }
+}
