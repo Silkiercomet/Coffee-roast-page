@@ -3,13 +3,9 @@ import CollectionSection from "../organism/CollectionSection"
 import HowItWorksSection from "../organism/HowItWorks"
 import MainBanner from "../organism/MainBanner"
 import WhyUsSection from "../organism/WhyUsSection"
-
+import {howItWorks} from "../../ultils/content"
 const HomeTemplate = () => {
-  const howItWorks = [
-    { header: 'Header 1', content: 'Content 1' },
-    { header: 'Header 2', content: 'Content 2' },
-    { header: 'Header 3', content: 'Content 3' },
-  ];
+
   return (
     <main className="wrapper">
         <MainBanner type='home-bg'>
