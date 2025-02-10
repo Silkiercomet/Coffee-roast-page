@@ -1,5 +1,5 @@
 import NumberedCard from "../atoms/NumberedCard";
-
+import style from "./HowItWorks.module.css";
 interface HowItWorksItem {
   header: string;
   content: string;
@@ -11,9 +11,9 @@ interface SectionProps {
 
 const HowItWorksSection = ({ header, array }: SectionProps) => {
   return (
-    <section>
-      <h3>{header}</h3>
-      <ol>
+    <section className={style.howitworks}>
+      <h3 className={style.howitworks_header}>{header}</h3>
+      <ol className={style.howitworks_list}>
         {array.map((item, index) => (
           <NumberedCard
             key={index}
