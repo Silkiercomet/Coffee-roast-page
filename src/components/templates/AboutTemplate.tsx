@@ -1,7 +1,7 @@
 import Headquarters from "../organism/Headquaters"
 import MainBanner from "../organism/MainBanner"
 import SecondaryBanner from "../organism/SecondaryBanner"
-
+import {aboutBanner} from "../../ultils/content"
 const AboutTemplate = () => {
   return (
     <main className="wrapper">

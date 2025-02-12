@@ -1,5 +1,5 @@
 interface CountriesProps {
-  img: string;
+  img: JSX.Element;
   country: string;
   street: string;
   city: string;
@@ -10,7 +10,7 @@ interface CountriesProps {
 const Country: React.FC<CountriesProps> = ({ img, country, street, city, zip, telf }) => {
   return (
     <li>
-      <img src={img} alt={country} />
+      {img}
       <h4>{country}</h4>
       <p>{street}</p>
       <p>{city}</p>
