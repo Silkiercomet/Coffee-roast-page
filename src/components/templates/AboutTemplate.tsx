@@ -11,8 +11,9 @@ const AboutTemplate = () => {
                 <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
             </div>
         </MainBanner>
-        <SecondaryBanner title="title" content="content" img="image" inverse={false} />
-        <SecondaryBanner title="title" content="content" img="image" inverse={true} />
+        {aboutBanner.map((element, index) => 
+          <SecondaryBanner key={index} title={element.title} content={element.content} img={element.image} inverse={element.reverse} />
+        )}
         <Headquarters />
     </main>
   )
