@@ -160,3 +160,14 @@ export const addressData: Address[] = [
 
   ]
 ;
+// ------------------------------------------------ contact -----------------------------------------------
+interface howItWorks{
+  header: string;
+  content: string;
+}
+
+export const howItWorksArray : howItWorks[] = [
+  { header: 'Pick your coffee', content: 'Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.' },
+  { header: 'Choose the frequency', content: 'Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.' },
+  { header: 'Receive and enjoy!', content: 'We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.' },
+];

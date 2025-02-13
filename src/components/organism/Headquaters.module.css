@@ -1,0 +1,37 @@
+.headquarters{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px;
+    gap: 40px;
+}
+.headquarters_header{
+    color: var(--alt-font-color);
+    font-size: 1.8rem;
+}
+.headquarters_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-left: 0;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+
+}
+.headquarters_list li h4{
+    color: var(--font-color);
+    font-size: 1.8rem;
+}
+
+@media screen and (width < 800px) {
+    .headquarters_list li{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+
+        svg{
+            margin-inline: auto;
+        }
+    }
+}

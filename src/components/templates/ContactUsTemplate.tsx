@@ -1,13 +1,9 @@
 import HowItWorksSection from "../organism/HowItWorks"
 import MainBanner from "../organism/MainBanner"
 import OrderForm from "../organism/OrderForm";
-
+import {howItWorksArray} from "../../ultils/content"
 const ContactUsTemplate = () => {
-    const howItWorks = [
-        { header: 'Header 1', content: 'Content 1' },
-        { header: 'Header 2', content: 'Content 2' },
-        { header: 'Header 3', content: 'Content 3' },
-      ];
+
   return (
     <main className="wrapper">
         <MainBanner type='contact-bg'>
@@ -16,7 +12,9 @@ const ContactUsTemplate = () => {
                 <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
             </div>
         </MainBanner>
-        <HowItWorksSection array={howItWorks} header=""/>
+        <div className="contact-info">
+            <HowItWorksSection array={howItWorksArray} header=""/>
+        </div>
         <OrderForm />
     </main>
   )
