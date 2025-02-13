@@ -47,6 +47,7 @@ p, h1, h2, h3, h4, h5, h6 {
 h1, h2, h3,h4 {
   font-family: "Fraunces", serif;
   font-size: 2.1rem;
+  color: var(--font-color);
 }
 
 /* 8. Improve line wrapping */
@@ -71,6 +72,32 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   gap: 5rem;
 
+}
+.contact-info{
+  position: relative;
+}
+.contact-info section ol li h3{
+  color: var(--bg-white);
+}
+.contact-info section ol li p{
+  color: var(--alt-font-color);
+}
+.contact-info section ol li span{
+  background-color: transparent;
+}
+.contact-info section ol{
+  padding-block: 30px;
+}
+.contact-info::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  border-radius: 15px;
+
+  background-color: var(--font-color);
 }
 @media screen and (width < 1220px) {
   .wrapper{
