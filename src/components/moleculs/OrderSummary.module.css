@@ -1,0 +1,17 @@
+.summary {
+  background-color: var(--font-color);
+  border-radius: 15px;
+  color: var(--bg-white);
+  padding: 3rem 2.5rem;
+
+  display: grid;
+  gap: 1rem;
+}
+
+.summary h4 {
+    color: var(--bg-white);
+}
+
+.summary span {
+  color: var(--darkcyan);
+}
