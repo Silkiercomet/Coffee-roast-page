@@ -1,0 +1,78 @@
+/* consigue que los elementos option_list_item_label tambien creazcan y se reduzcan dependiendo de 
+active  */
+.option {
+    display: flex;
+    flex-direction: column;
+    transition: 300ms ease-in-out;
+
+}
+.option_header {
+    cursor: pointer;
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+
+}
+
+.option_list {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: 0fr;
+  height: 0;
+  opacity: 0;
+  align-items: start;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  gap: 10px;
+
+
+  transition: 300ms ease-in-out;
+}
+.active{
+    height: 100%;
+    opacity: 1;
+    grid-template-rows: 1fr;
+    margin-bottom: 2rem;
+}
+.option_list_item {
+  input {
+    display: none;
+  }
+
+
+
+
+.option_list_item_label {
+  display: block; /* Ensure label takes full width */
+  height: 100%;
+  width: 100%;
+  padding: 2rem 1.5rem 7.25rem;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: var(--lighgray);
+  max-height: 240px;
+}
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* Add some space below the h4 */
+  }
+
+
+}
+.option_list_item_label:hover{
+    background-color: var(--hover-color);
+}
+  .option_list_item input:checked + label { /* This is the key change */
+    background-color: var(--darkcyan); /* Define --selected-color in your CSS variables */
+    h4 {
+      color: white; /* Define --selected-text-color in your CSS variables */
+    }
+    color: white;
+  }

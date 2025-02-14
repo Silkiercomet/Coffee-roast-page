@@ -1,11 +1,11 @@
-
+import style from "./OrderSummary.module.css"
 interface OrderSummaryProps {
   watch: any;
 }
 
 const OrderSummary: React.FC<OrderSummaryProps> = ({ watch }) => {
   return (
-    <div>
+    <div className={style.summary}>
       <p>ORDER SUMMARY</p>
       <h4>
         I drink my coffee as{' '}
@@ -20,6 +20,7 @@ const OrderSummary: React.FC<OrderSummaryProps> = ({ watch }) => {
         <span>{watch('delivery') || '___'}</span>
         .
       </h4>
+      
     </div>
   );
 };
