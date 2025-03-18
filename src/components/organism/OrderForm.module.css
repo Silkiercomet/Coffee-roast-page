@@ -73,6 +73,7 @@
     border: none;
     margin-left: auto;
     margin-block: 1.5rem;
+    cursor: pointer;
 }
 .form{
     display: grid;
